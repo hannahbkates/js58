@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Woot!</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="app.js"></script>
+	<script src="video.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!-- Need to create container for bootstrap -->
+	<div class="container">
+		<!-- Adding a row using bootstrap class -->
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Hi!</h1>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Get the weather</h2>
+				<input type="text" id="long" placeholder="Enter in longitude" /><br>
+				<input type="text" id="lat" placeholder="Enter in latitude" /><br>
+				<button id="get-weather" class="btn btn-primary">Get the weather</button>
+				<marquee id="loading-marquee">Loading...</marquee>
+				<div class="panel">
+					<div class="panel-body">
+						Current Temp: <span id="current-temp"></span><br>
+						Current Humidity: <span id="current-humid"></span><br>
+						Current Wind Speed: <span id="current-wind"></span><br>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h2>Random video</h2>
+				<input type="text" id="add-video" placeholder="Add a youtube video ID" />
+				<button id="submit-video" class="btn btn-primary">Add video</button><br>
+				<button id="get-video" class="btn btn-primary">Go!</button>
+				<div id = "random-video"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
