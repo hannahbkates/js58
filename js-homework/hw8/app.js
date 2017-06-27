@@ -36,7 +36,6 @@ $(function() {
 		// New York Times
 		} else if(pub == 'nytimes') {
 			seekURL = 'https://api.nytimes.com/svc/topstories/v2/home.json?api-key=b35a2aca600a49bc9f1632c593027839'
-			// seekURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=b35a2aca600a49bc9f1632c593027839'
 			$.get(proxyURL + seekURL, function(rs){
 			  var i = 0;
 			  rs.results.forEach(function(r){
